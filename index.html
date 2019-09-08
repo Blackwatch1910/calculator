@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="viewArea" aria-rowspan="2" disabled></td>
+            </tr>
+            <tr>
+                <td id="7"><input type="button" id="seven" value="7" onclick="dis('7')"></td>
+                <td id='8'><input type="button" id="eight" value="8" onclick="dis('8')"></td>
+                <td id='9'><input type="button" id="nine" value="9" onclick="dis('9')"></td>
+                <td id='+'><input type="button" id="add" value="+" onclick="dis('+')"></td>
+            </tr>
+            <tr>
+                <td id='4'><input type="button" id="four" value="4" onclick="dis('4')"></td>
+                <td id='5'><input type="button" id="five" value="5" onclick="dis('5')"></td>
+                <td id='6'><input type="button" id="six" value="6" onclick="dis('6')"></td>
+                <td id='-'><input type="button" id="sub" value="-" onclick="dis('-')"></td>
+            </tr>
+            <tr>
+                <td id="1"><input type="button" id="one" value="1" onclick="dis('1')"></td>
+                <td id="2"><input type="button" id="two" value="2" onclick="dis('2')"></td>
+                <td id="3"><input type="button" id="three" value="3" onclick="dis('3')"></td>
+                <td id="*"><input type="button" id="mul" value="*" onclick="dis('*')"></td>
+            </tr>
+            <tr>
+                <td id="c"><input type="button" id="clear" value="C" onclick="clr()"></td>
+                <td id="0"><input type="button" id="zero" value="0" onclick="dis('0')"></td>
+                <td id="="><input type="button" id="equal" value="=" onclick="solve()"></td>
+                <td id="/"><input type="button" id="div" value="/" onclick="dis('/')"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</html>
